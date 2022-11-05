@@ -1,5 +1,7 @@
 package master.ds.array;
 
+import master.ds.utils.Helpers;
+
 /*
 Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
 
@@ -28,17 +30,10 @@ Follow up: Squaring each element and sorting the new array is very trivial, coul
 * */
 public class SquaresOfSortedArray {
     public static void main(String[] args) {
-        printResult(sortedSquares(new int[]{-4,-1,0,3,10}));
-        printResult(sortedSquares(new int[]{-7,-3,2,3,11}));
-        printResult(sortedSquares(new int[]{-1}));
-        printResult(sortedSquares(new int[]{-5,-4,-3,-2,-1}));
-    }
-
-    private static void printResult(int[] sortedSquares) {
-        for (int res:sortedSquares) {
-            System.out.print(" "+res);
-        }
-        System.out.println();
+        Helpers.printArray(sortedSquares(new int[]{-4,-1,0,3,10}));
+        Helpers.printArray(sortedSquares(new int[]{-7,-3,2,3,11}));
+        Helpers.printArray(sortedSquares(new int[]{-1}));
+        Helpers.printArray(sortedSquares(new int[]{-5,-4,-3,-2,-1}));
     }
 
     public static int[] sortedSquares(int[] nums) {
