@@ -7,4 +7,11 @@ public class Helpers {
         }
         System.out.println();
     }
+
+    public static void printArray(int[] array, int endSize) {
+        for (int i = 0; i < endSize; i++) {
+            System.out.print(" " + array[i]);
+        }
+        System.out.println();
+    }
 }
